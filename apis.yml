@@ -1,7 +1,29 @@
 aid: hemster
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hemster.png
 name: Hemster
-description: Hemster is a company surfaced as a portfolio company of bullpen-capital and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Hemster is a fashion-technology company that modernizes tailoring and garment
+  fit through a digital "Fit Profile" system. Customers create a personalized fit
+  pattern once, then match any garment — new or from their existing closet — to
+  that saved profile so it can be tailored to their perfect fit rather than to a
+  standard size. The platform aims to reduce returns, extend the life of clothing
+  people already own, and remove size-related hesitation at purchase, with a
+  sustainability angle around keeping garments out of landfill. Hemster operates a
+  consumer web app at my.hemster.co and a related returns/deadstock product
+  ((re)vive / byrevive.com). It is backed by Bullpen Capital. As of this profile
+  Hemster publishes no public developer, API, or integration surface; this record
+  is maintained in the API Evangelist network as a company lead.
 url: https://raw.githubusercontent.com/api-evangelist/hemster/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Fashion Technology
+- Retail
+- E-Commerce
+- Tailoring
+- Apparel
+- Sustainability
+- Fit
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/hemster-domain-security.yml
 - type: Website
   url: https://hemster.co
+- type: SignUp
+  url: https://my.hemster.co
+- type: Support
+  url: https://hemster.co/contact-us
+- type: TermsOfService
+  url: https://hemster.co/terms-conditions
+- type: PrivacyPolicy
+  url: https://hemster.co/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
